@@ -22,10 +22,20 @@
                     <li class="iniciar-sesion"><a href="sesion.html">Iniciar Sesion</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>  
-            </nav>      
-            <div class="menu-2">
-                <img src="../assets/menu-hamburguesa.png" alt="">
-            </div> 
+            </nav>
+            <div class="carrito">
+                <button class="boton-carrito" onclick="irAlCarrito()">
+                    Ir al Carrito
+                </button>
+            </div>
+        
+            <script>
+                function irAlCarrito() {
+                    // Aquí puedes redirigir a la página del carrito
+                    alert("Te llevaré a la página del carrito");
+                    // window.location.href = 'ruta/a/tu/carrito.html'; // Descomenta y ajusta la ruta como sea necesario.
+                }
+            </script>    
         </header>
         
 
