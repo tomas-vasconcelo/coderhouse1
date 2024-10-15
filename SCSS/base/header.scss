@@ -6,7 +6,7 @@ header{
     border-bottom: 1px solid rgb(255, 0, 0);
     color: white;
     align-items: center;
-
+    width: 100%  !important;
 
 }
 
@@ -32,9 +32,14 @@ header nav ul li a:hover{
 
 .menu{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 15px;
+   
 }
-
+.menu li {
+    flex: 1; /* Para que los elementos se distribuyan uniformemente */
+}
 .menu-2{
     grid-area: menu-2;
     display: flex;
@@ -44,8 +49,6 @@ header nav ul li a:hover{
 .menu-foto{
     display: flex;
     width: 128px;
-    height: 128px;
-
 }
 
 

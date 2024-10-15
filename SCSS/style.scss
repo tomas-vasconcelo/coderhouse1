@@ -1,16 +1,19 @@
 //GENERALES 
-
 @import "./base/generales.scss";
 @import "./base/header.scss";
 @import "./base/body.scss";
 @import"./base/footer.scss";
+
+
+// PAGES
+@import"./layout/index.scss";
 @import "./layout/contacto.scss";
 @import "./layout/cultivo.scss";
 @import "./layout/parafernalia.scss";
 @import "./layout/sesion.scss";
-@import"./layout/index.scss";
 
-
+// MEADIA QUERY
 @import "./media/media-1024.scss";
 @import "./media/media768.scss";
 @import "./media/media425.scss";
+@import "./media/media320.scss";
