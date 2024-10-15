@@ -1,0 +1,11 @@
+@media screen and (max-width: 425px) {
+    .grid-containter-index {
+        display: flex;
+        flex-direction: column;
+        width: 80vh;
+        margin: 0px 15px;
+    }
+    .titulo-container{
+        color: white;
+    }
+}

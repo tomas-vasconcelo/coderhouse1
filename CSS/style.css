@@ -6,27 +6,25 @@
 }
 
 header {
+  margin: 30px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid rgb(255, 0, 0);
   color: white;
   align-items: center;
-  padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "foto menu menu-2";
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
+  gap: 20px;
 }
 
-header nav ul li a {
+.item-nav {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  margin-left: 100px;
+  color: inherit;
 }
 
 header nav ul li a:hover {
@@ -34,7 +32,8 @@ header nav ul li a:hover {
 }
 
 .menu {
-  grid-area: menu;
+  display: flex;
+  gap: 15px;
 }
 
 .menu-2 {
@@ -44,8 +43,9 @@ header nav ul li a:hover {
 }
 
 .menu-foto {
-  grid-area: foto;
-  width: 30%;
+  display: flex;
+  width: 128px;
+  height: 128px;
 }
 
 .iniciar-sesion {
@@ -76,7 +76,7 @@ body {
   background-color: #000;
 }
 
-#titulo-container {
+.titulo-container {
   margin: 30px;
   display: flex;
   font-size: 50px;
@@ -318,6 +318,31 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-container {
+    display: flex;
+  }
+  .menu-foto {
+    display: flex;
+  }
+}
+@media screen and (min-width: 690px) and (max-width: 790px) {
+  .menu {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .grid-containter-index {
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    margin: 0px 15px;
+  }
+  .titulo-container {
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,12 @@
 
 header{
+    margin: 30px 0px; 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: 1px solid rgb(255, 0, 0);
     color: white;
     align-items: center;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: 
-    "foto menu menu-2";
+
 
 }
 
@@ -17,16 +14,16 @@ header{
 header nav ul{
     list-style-type: none;
     display: flex;
-    
+    gap: 20px;
 }
 
 
-header nav ul li a {
+.item-nav {
     
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    margin-left: 100px;
+    color: inherit;
 }
 
 header nav ul li a:hover{
@@ -34,7 +31,8 @@ header nav ul li a:hover{
 }
 
 .menu{
-    grid-area: menu;
+    display: flex;
+    gap: 15px;
 }
 
 .menu-2{
@@ -44,8 +42,10 @@ header nav ul li a:hover{
 }
 
 .menu-foto{
-    grid-area: foto;
-    width: 30%;
+    display: flex;
+    width: 128px;
+    height: 128px;
+
 }
 
 
