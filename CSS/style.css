@@ -76,7 +76,7 @@ body {
   background-color: #000;
 }
 
-.titulo-container {
+-container {
   margin: 30px;
   display: flex;
   font-size: 50px;
@@ -122,37 +122,6 @@ body {
 
 .footer-conteiner a:hover {
   color: red;
-}
-
-.grid-containter-index {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 25px;
-  margin: 50px;
-  grid-template-areas: "item1 item1" "item2 item2";
-}
-
-.item1 {
-  grid-area: item1;
-}
-
-.item2 {
-  grid-area: item2;
-}
-
-.item3 {
-  grid-area: item3;
-}
-
-.foto-inicio {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.foto-envio {
-  width: 100%;
-  border-radius: 5px;
 }
 
 .logocontacto {
@@ -320,6 +289,44 @@ body {
   gap: 10px;
 }
 
+.grid-containter-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+  margin: 50px;
+  grid-template-areas: "item1 item1" "item2 item2";
+}
+
+.titulo {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.foto-inicio {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.foto-envio {
+  width: 100%;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 1024px) {
   .menu-container {
     display: flex;
@@ -332,8 +339,11 @@ body {
   .menu {
     font-size: 16px;
   }
+  .itemfooter {
+    width: 300px;
+  }
 }
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 300px) and (max-width: 669px) {
   .grid-containter-index {
     display: flex;
     flex-direction: column;
@@ -341,7 +351,14 @@ body {
     margin: 0px 15px;
   }
   .titulo-container {
+    display: flex;
     color: white;
+    text-align: center;
+    width: 80vh;
+    justify-content: center;
+  }
+  .itemfooter {
+    width: 300px;
   }
 }
 
