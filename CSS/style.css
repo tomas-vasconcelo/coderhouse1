@@ -1,382 +1,323 @@
-
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+/*  Reset */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #000;
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(255, 0, 0);
+  color: white;
+  align-items: center;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "foto menu menu-2";
 }
 
-
-header{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(255, 0, 0);
-    color: white;
-    align-items: center;
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: 
-    "foto menu menu-2";
-
-}
-
-.menu{
-    grid-area: menu;
-}
-
-.menu-2{
-    grid-area: menu-2;
-    display: flex;
-    justify-content: end;
-}
-
-.menu-foto{
-    grid-area: foto;
-    width: 30%;
-}
-
-header nav ul{
-    list-style-type: none;
-    display: flex;
-    
-}
-
-.iniciar-sesion{
-    display: flex;
-    align-items: center;
+header nav ul {
+  list-style-type: none;
+  display: flex;
 }
 
 header nav ul li a {
-    
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    margin-left: 100px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin-left: 100px;
 }
 
-header nav ul li a:hover{
-    color: red;
+header nav ul li a:hover {
+  color: red;
 }
 
-
-#titulo-container{
-    margin: 30px;
-    display: flex;
-    font-size:50px;
-    justify-content: center;
-    text-decoration: underline;
-    color: white;
+.menu {
+  grid-area: menu;
 }
 
-.photo-product-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4,1fr);
+.menu-2 {
+  grid-area: menu-2;
+  display: flex;
+  justify-content: end;
 }
 
-
-.image-product{
-    border: 1px solid #ff0000;
-    width: 30px;
+.menu-foto {
+  grid-area: foto;
+  width: 30%;
 }
 
-.footer-conteiner{
-    background-color: #000;
-    border-top: 1px solid red;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "footer-item1 footer-item3"
-    "footer-item2 footer-item3";
-}
-
-.footer-item1{
-    grid-area: footer-item1;
-    margin: auto;
-    border-radius: 5%;
-}
-
-
-.footer-item2{
-    grid-area: footer-item2;
-    margin: auto;
-    border-radius: 5%;
-}
-
-.footer-item3{
-    grid-area: footer-item3;
-
-}
-
-.itemfooter {
-    width: 80%;
-}
-
-.footer-conteiner a{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-
-}
-
-.footer-conteiner a:hover{
-    color: red;
-}
-
-.grid-containter-index{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px;
-    margin: 50px;
-    grid-template-areas: 
-    "item1 item1"
-    "item2 item2";
-}
-
-.item1{
-    grid-area: item1;
-}
-
-
-.item2{
-    grid-area: item2;
-}
-
-.item3{
-    grid-area: item3;
-}
-
-.item2 h1 {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bolder;
-    color: white;
-    margin-top: 150px;
-
-}
-
-.footer{
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer nav ul{
-    display: flex;
-    list-style-type: none;
-}
-
-footer nav ul li{
-    margin: 5px;
-}
-
-footer nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-footer nav ul li a:hover{
-    color: red;
-    margin:20px;
-
-}
-
-
-.foto-inicio{
-    width: 100%;
-    border-radius: 5px;
-    
-}
-
-
-
-.foto-contacto{
-    width: 100%;
-}
-
-
-
-
-.vapos1{
-    width: 150px;
-}
-
-
-
-
-.foto-envio{
-    width: 100%;
-    border-radius: 5px;
-}
-
-
-.logocontacto{
-    width: 100%;
-}
-
-.tano{
-    margin-top: 50px;
-    width: 100%;
-    border-radius: 5px;
-    position: relative;
-    top: 7px;
-
-}
-
-.texto-contacto{
-    color: white;
-}
-
-
-.contacto-grid-containter{
-    margin: 50px;
-}
-
-
-
-.contacto-grid-containter ul li a{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-
-}
-
-.links-contacto{
-    margin-top: 50px;
-    
-}
-
-.producto{
-    width: 100%;
-}
-
-.card-title {
-    background-color: white;
-    font-size: 50px;
-    text-align: center;
-}
-
-.card-img-top{
-    width: 350px;
-}
-
-.card-text{
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.product-container{
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-padding-left: 130px;
-padding-top: 50px;
-gap: 100px;
-
-}
-
-.links-contacto a:hover{
-    color: red;
-}
-
-.formulario-container{
-    color: white;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 1%;
-}
-
-.invitacion-registrarse-container{
-    color: white;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    overflow: hidden;
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-img {
-    width: 100%;
-    height: auto;
-}
-
-.card-content {
-    padding: 15px;
-}
-
-.card-title {
-    font-size: 1.5em;
-    margin: 0;
-}
-
-.card-description {
-    color: #666;
-    margin: 10px 0;
-}
-
-.card-price {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.btn-add {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-add:hover {
-    background-color: #218838;
+.iniciar-sesion {
+  display: flex;
+  align-items: center;
 }
 
 .carrito {
-    text-align: center;
+  text-align: center;
 }
 
 .boton-carrito {
-    background-color: #007bff; /* Color azul */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cambiar cursor al pasar el ratón */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: background-color 0.3s; /* Animación de color */
+  background-color: #007bff; /* Color azul */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Animación de color */
 }
 
 .boton-carrito:hover {
-    background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
-} 
+  background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
+
+body {
+  background-color: #000;
+}
+
+#titulo-container {
+  margin: 30px;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  text-decoration: underline;
+  color: white;
+}
+
+.footer-conteiner {
+  background-color: #000;
+  border-top: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "footer-item1 footer-item3" "footer-item2 footer-item3";
+}
+
+.footer-item1 {
+  grid-area: footer-item1;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.footer-item2 {
+  grid-area: footer-item2;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.footer-item3 {
+  grid-area: footer-item3;
+}
+
+.itemfooter {
+  width: 80%;
+}
+
+.footer-conteiner a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.footer-conteiner a:hover {
+  color: red;
+}
+
+.grid-containter-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+  margin: 50px;
+  grid-template-areas: "item1 item1" "item2 item2";
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.foto-inicio {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.foto-envio {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.logocontacto {
+  width: 100%;
+}
+
+.texto-contacto {
+  color: white;
+}
+
+.contacto-grid-containter {
+  margin: 50px;
+}
+
+.contacto-grid-containter ul li a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.links-contacto {
+  margin-top: 50px;
+}
+
+.links-contacto a:hover {
+  color: red;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-left: 130px;
+  padding-top: 50px;
+  gap: 100px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-description {
+  color: #666;
+  margin: 10px 0;
+}
+
+.card-price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #218838;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-left: 130px;
+  padding-top: 50px;
+  gap: 100px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-description {
+  color: #666;
+  margin: 10px 0;
+}
+
+.card-price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn-add {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #218838;
+}
+
+.formulario-container {
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.invitacion-registrarse-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
