@@ -9,7 +9,7 @@ header {
   margin: 30px 0px;
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid rgb(255, 0, 0);
+  border-bottom: 6px solid rgb(255, 0, 0);
   color: white;
   align-items: center;
   width: 100% !important;
@@ -93,7 +93,7 @@ body {
 
 .footer-conteiner {
   background-color: #000;
-  border-top: 1px solid red;
+  border-top: 6px solid red;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -369,6 +369,10 @@ body {
     text-align: center;
     width: 80vh;
     justify-content: center;
+  }
+  .boton-carrito {
+    font-size: 13px;
+    margin: 10px;
   }
   .itemfooter {
     width: 300px;
