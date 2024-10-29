@@ -1,33 +1,30 @@
+.contacto-grid-containter{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 .logocontacto{
-    width: 100%;
-}
-
-.texto-contacto{
-    color: white;
-}
-
-.contacto-grid-containter{
-    margin: 50px;
-}
-
-.contacto-grid-containter ul li a{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-
-}
-
-.links-contacto{
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
     
 }
 
-
-.links-contacto a:hover{
-    color: red;
-
+.foto-contacto{
+    display: flex;
+    justify-content: center;
+    
 }
+
+.texto-contacto{
+    color: white;    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 100px ;
+}
+
+
 
 .social-icons {
     display: flex;
