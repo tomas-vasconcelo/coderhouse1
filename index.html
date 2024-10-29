@@ -12,28 +12,38 @@
     <body>
         <!--  HEADER -->
         <header class="menu-container">
-            <nav id="navBar" class="navbar navbar-expand-lg w-100">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class="navbar__logo" src="images/Logo_chat.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                            <a class="nav-link" href="pages/parafernalia.html">Parafernalia</a>
-                            <a class="nav-link" href="pages/cultivo.html">Cultivo</a>
-                            <a class="nav-link" href="pages/sesion.html">Iniciar sesion</a>
-                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            <div>
+                <img src="https://res.cloudinary.com/dmioavl08/image/upload/v1729017676/LOGO_IG_ojeu8n-removebg-preview_hbbt5w.png" alt="" class="menu-foto">
+            </div>
+            <nav class="menu">
+            <ul>
+                <li><a href="index.html "class="item-nav"">Inicio</a></li>  
+                <li><a href="pages/parafernalia.html"class="item-nav">Parafernalia</a></li>
+                <li><a href="pages/cultivo.html"class="item-nav">Cultivo</a></li>
+                <li ><a href="pages/sesion.html" class="item-nav" >Iniciar Sesion</a></li>
+                <li><a href="pages/contacto.html"class="item-nav">Contacto</a></li>
+            </ul>  
+        </nav>
+            <div class="carrito">
+                <button class="boton-carrito" onclick="irAlCarrito()">
+                    Ir al Carrito
+                </button>
+            </div>
+        
+            <script>
+                function irAlCarrito() {
+                    // Aquí puedes redirigir a la página del carrito
+                    alert("Te llevaré a la página del carrito");
+                    // window.location.href = 'ruta/a/tu/carrito.html'; // Descomenta y ajusta la ruta como sea necesario.
+                }
+            </script>     
         </header>
         
         
         <!-- SECCION GRIDS -->
         <!-- SECCION TITULO-->
+    
+    
             <div class="titulo-container">
                 <div class="titulo">
                     INICIO
