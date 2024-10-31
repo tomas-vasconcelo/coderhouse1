@@ -3,26 +3,33 @@
     padding: 0;
     box-sizing: border-box;
   }
-.titulo{
+  .titulo {
     color: white;
     text-align: center;
     font-size: 30px;
     text-decoration: underline;
 }
 
-  .grid-containter-index {
+.grid-containter-index {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .carousel-fade {
-    max-width: 600px; /* Tamaño máximo del carrusel */
-  }
+    flex-direction: column;
+    padding: 20px;
+}
 
-  .images-carousel{
+/* Ajusta el ancho del carrusel para pantallas grandes */
+.carousel-fade {
     width: 100%;
-  }
+    max-width: 800px; /* Ajusta el tamaño máximo según lo necesites */
+}
+
+/* Imágenes del carrusel */
+.images-carousel {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Mantiene las imágenes escaladas y centradas */
+}
   
 
 /* Estilos para pantallas grandes (3 columnas) */

@@ -1,18 +1,4 @@
 @media screen and (min-width: 300px) and (max-width: 669px) {
-    .grid-containter-index {
-        display: flex;
-        flex-direction: column;
-        width: 80vh;
-        margin: 0px 15px;
-    }
-    .titulo-container{
-        display: inline-flex;
-        color: white;
-        text-align: center;
-        width: 80vh;
-        justify-content: center;
-        font-size: 12px;
-    }
 
     .boton-carrito {
         font-size: 13px;
@@ -20,8 +6,37 @@
     }
 
     .itemfooter{
-        width: 300px;
+        width: 250px;
     }
 
     
+}
+
+@media screen and (max-width: 600px) {
+    .formulario-container {
+        padding: 10%;
+        font-size: 13px;
+    }
+
+    .email, .password, .boton-ingresar {
+        padding: 5px;
+    }
+
+    input[type="email"], input[type="password"], input[type="submit"] {
+        font-size: 1rem;
+    }
+
+    .email{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logocontacto{
+        width: 300px;
+    }
+
+    .mapa{
+        width: 300px;
+    }
 }

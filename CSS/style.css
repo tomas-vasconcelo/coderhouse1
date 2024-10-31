@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -78,17 +79,16 @@ header nav ul li a:hover {
   background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
 }
 
-body {
-  background-color: #000;
+/* Cambiar color del navbar-toggler-icon a blanco */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-.titulo-container {
-  margin: 30px;
-  display: flex;
-  font-size: 50px;
-  justify-content: center;
-  text-decoration: underline;
-  color: white;
+body {
+  background-color: #000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-conteiner {
@@ -147,14 +147,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
+/* Ajusta el ancho del carrusel para pantallas grandes */
 .carousel-fade {
-  max-width: 600px; /* Tamaño máximo del carrusel */
+  width: 100%;
+  max-width: 800px; /* Ajusta el tamaño máximo según lo necesites */
 }
 
+/* Imágenes del carrusel */
 .images-carousel {
   width: 100%;
+  height: auto;
+  object-fit: cover; /* Mantiene las imágenes escaladas y centradas */
 }
 
 /* Estilos para pantallas grandes (3 columnas) */
@@ -242,6 +249,13 @@ body {
   margin: 0px 100px;
 }
 
+.links-contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
 .social-icons {
   display: flex;
   gap: 15px; /* Espacio entre los iconos */
@@ -256,6 +270,20 @@ body {
 .icon:hover {
   color: #1da1f2; /* Cambia de color al pasar el cursor */
   transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+.mapa {
+  color: white;
+  display: flex;
+}
+
+.parrafo-contacto {
+  margin-left: 5px;
+  font-size: 16px;
+  display: flex;
+  max-width: 200px;
+  overflow-wrap: break-word; /* Para palabras largas */
+  align-items: flex-start;
 }
 
 .product-container {
@@ -381,14 +409,23 @@ body {
 
 .formulario-container {
   color: white;
-  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 1%;
+  padding: 5%;
+  max-width: 400px; /* Limitar el ancho máximo para mejor visibilidad en pantallas grandes */
+  width: 100%; /* Adaptable a pantallas pequeñas */
+  margin: auto;
+}
+
+.email, .password, .boton-ingresar {
+  width: 100%; /* Asegura que los inputs ocupen todo el ancho disponible */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .invitacion-registrarse-container {
@@ -396,6 +433,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
@@ -410,6 +449,20 @@ body {
   .menu-container {
     width: 70%;
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .titulo {
+    font-size: 24px;
+  }
+  .carousel-fade {
+    max-width: 100%;
+  }
+  .logocontacto {
+    width: 500px;
+  }
+  .mapa {
+    width: 500px;
   }
 }
 @media screen and (min-width: 690px) and (max-width: 790px) {
@@ -431,25 +484,34 @@ body {
   }
 }
 @media screen and (min-width: 300px) and (max-width: 669px) {
-  .grid-containter-index {
-    display: flex;
-    flex-direction: column;
-    width: 80vh;
-    margin: 0px 15px;
-  }
-  .titulo-container {
-    display: inline-flex;
-    color: white;
-    text-align: center;
-    width: 80vh;
-    justify-content: center;
-    font-size: 12px;
-  }
   .boton-carrito {
     font-size: 13px;
     margin: 10px;
   }
   .itemfooter {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .formulario-container {
+    padding: 10%;
+    font-size: 13px;
+  }
+  .email, .password, .boton-ingresar {
+    padding: 5px;
+  }
+  input[type=email], input[type=password], input[type=submit] {
+    font-size: 1rem;
+  }
+  .email {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .logocontacto {
+    width: 300px;
+  }
+  .mapa {
     width: 300px;
   }
 }
@@ -459,10 +521,6 @@ body {
   }
 }
 @media screen and (max-width: 670px) {
-  .titulo {
-    display: flex;
-    justify-content: center;
-  }
   .product-container {
     grid-template-columns: repeat(1, 1fr);
   }

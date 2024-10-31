@@ -5,11 +5,9 @@
 }
 
 @media screen and (max-width:670px){
-    .titulo{
-        display: flex;
-        justify-content: center;
-    }
+
     .product-container{
         grid-template-columns: repeat(1,1fr);
     }
+
 }

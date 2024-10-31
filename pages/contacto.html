@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocos Growshop | Contacto</title>
+    <title>Zazas Growshop | Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -13,35 +13,31 @@
 
 <!--  BODY DE LA PAGINA  -->
 <body>
-    <!--  HEADER  -->
+
     <header class="menu-container">
         <div>
             <img src="https://res.cloudinary.com/dmioavl08/image/upload/v1729017676/LOGO_IG_ojeu8n-removebg-preview_hbbt5w.png" alt="" class="menu-foto">
         </div>
-    <nav class="menu">
-        <ul>
-            <li><a href="../index.html "class="item-nav"">Inicio</a></li>  
-            <li><a href="parafernalia.html"class="item-nav">Parafernalia</a></li>
-            <li><a href="cultivo.html"class="item-nav">Cultivo</a></li>
-            <li ><a href="sesion.html" class="item-nav" >Iniciar Sesion</a></li>
-            <li><a href= "contacto.html"class="item-nav">Contacto</a></li>
-        </ul>  
-    </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="../index.html" class="nav-link item-nav">Inicio</a></li>  
+                        <li class="nav-item"><a href="parafernalia.html" class="nav-link item-nav">Parafernalia</a></li>
+                        <li class="nav-item"><a href="cultivo.html" class="nav-link item-nav">Cultivo</a></li>
+                        <li class="nav-item"><a href="sesion.html" class="nav-link item-nav">Iniciar Sesion</a></li>
+                        <li class="nav-item"><a href="contacto.html" class="nav-link item-nav">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class="carrito">
-            <button class="boton-carrito" onclick="irAlCarrito()">
-                Ir al Carrito
-            </button>
+            <button class="boton-carrito" onclick="irAlCarrito()">Ir al Carrito</button>
         </div>
-    
-        <script>
-            function irAlCarrito() {
-                // Aquí puedes redirigir a la página del carrito
-                alert("Te llevaré a la página del carrito");
-                // window.location.href = 'ruta/a/tu/carrito.html'; // Descomenta y ajusta la ruta como sea necesario.
-            }
-        </script>     
     </header>
-        
 
 
 <!-- SECCION TITULO-->
@@ -73,10 +69,12 @@
 
 
         <div class="links-contacto">
-                <div>
-                    <form id="form" caction="">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.9658819781447!2d-57.9608329159284!3d-34.91329854396429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e635478a9241%3A0xa94c5aa5f9b70be6!2sC.%2011%20541%2C%20B1902%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1730217489814!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="mapa">
+                    
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d408.9658819781447!2d-57.9608329159284!3d-34.91329854396429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e635478a9241%3A0xa94c5aa5f9b70be6!2sC.%2011%20541%2C%20B1902%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1730217489814!5m2!1ses-419!2sar" width="700px" height="500px"></iframe>
+                        <p class="parrafo-contacto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quis nulla nesciunt praesentium, cupiditate delectus officiis numquam voluptas corrupti ipsam, temporibus aliquam. Error explicabo ad officiis corrupti ducimus, nulla vel?</p>
                 </div>
+
                 <div class="social-icons">
                     <a href="https://www.instagram.com/tuusuario" target="_blank" class="icon">
                       <i class="fab fa-instagram"></i>
@@ -89,29 +87,32 @@
                         <i class="fas fa-envelope"></i> <!-- Icono de Gmail -->
                       </a>
                 </div>
-    
         </div>
     </section>
     
     <!-- FOOTER DE LA PAGINA -->
-    <footer >
+    <footer>
         <section class="footer-conteiner">
     
             <div class="footer-item1">
-                <a href="https://www.instagram.com/zazas.growshop/" target="_blank" class="enlace-ig">Instagram</a>   
+                <a href="https://www.instagram.com/zazas.growshop/" target="_blank" class="enlace-ig">
+                    <i class="fab fa-instagram"></i> <!-- Ícono de Instagram -->
+                </a>   
             </div>
-    
     
             <div class="footer-item2">
-                <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wsp">Whatsapp</a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="enlace-wsp">
+                    <i class="fab fa-whatsapp"></i> <!-- Ícono de WhatsApp -->
+                </a>
             </div>
     
-    
             <div class="footer-item3">
-                <img src="../images/Logo1.png"  alt="itemfooter" class="itemfooter">
+                <img src="../images/Logo1.png" alt="itemfooter" class="itemfooter">
             </div>
         </section>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 
