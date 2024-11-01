@@ -1,10 +1,16 @@
 .contacto-grid-containter{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
 }
 
+.texto-mapa{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+}
 .logocontacto{
   display: flex;
   align-items: center;
@@ -109,4 +115,3 @@
     align-items: flex-start;
 
   }    
-
