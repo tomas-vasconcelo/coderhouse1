@@ -25,16 +25,13 @@ header nav ul{
     color: inherit;
 }
 
-header nav ul li a:hover{
-    color: red;
-}
 
 .menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
-   
+    
 }
 .menu li {
     flex: 1; /* Para que los elementos se distribuyan uniformemente */
@@ -73,10 +70,14 @@ header nav ul li a:hover{
 
 .boton-carrito:hover {
     background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
-
+    
 }
 
 /* Cambiar color del navbar-toggler-icon a blanco */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link.item-nav:hover {
+    color: red;
 }
