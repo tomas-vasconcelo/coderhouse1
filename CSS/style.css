@@ -499,6 +499,9 @@ body {
     width: 70%;
     font-size: 15px;
   }
+  .logocontacto {
+    padding-top: 30px;
+  }
 }
 @media screen and (max-width: 890px) {
   .titulo {
