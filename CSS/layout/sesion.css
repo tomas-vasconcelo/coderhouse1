@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.formulario-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5%;
+  max-width: 400px; /* Limitar el ancho máximo para mejor visibilidad en pantallas grandes */
+  width: 100%; /* Adaptable a pantallas pequeñas */
+  margin: auto;
+}
+
+.email, .password, .boton-ingresar {
+  width: 100%; /* Asegura que los inputs ocupen todo el ancho disponible */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.invitacion-registrarse-container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=sesion.css.map */

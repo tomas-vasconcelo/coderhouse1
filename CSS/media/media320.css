@@ -1,0 +1,12 @@
+@media screen and (max-width: 1000px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 670px) {
+  .product-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*# sourceMappingURL=media320.css.map */

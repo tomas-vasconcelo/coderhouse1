@@ -1,0 +1,80 @@
+@charset "UTF-8";
+header {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 6px solid rgb(255, 0, 0);
+  color: white;
+  align-items: center;
+  width: 100% !important;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.item-nav {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.menu li {
+  flex: 1; /* Para que los elementos se distribuyan uniformemente */
+}
+
+.menu-2 {
+  grid-area: menu-2;
+  display: flex;
+  justify-content: end;
+}
+
+.menu-foto {
+  display: flex;
+  width: 128px;
+}
+
+.iniciar-sesion {
+  display: flex;
+  align-items: center;
+}
+
+.carrito {
+  text-align: center;
+}
+
+.boton-carrito {
+  background-color: #007bff; /* Color azul */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambiar cursor al pasar el ratón */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Animación de color */
+}
+
+.boton-carrito:hover {
+  background-color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
+
+/* Cambiar color del navbar-toggler-icon a blanco */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link.item-nav:hover {
+  color: red;
+}
+
+/*# sourceMappingURL=header.css.map */
