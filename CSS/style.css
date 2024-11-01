@@ -248,6 +248,42 @@ body {
   flex-direction: column;
   margin: 0px 100px;
 }
+.texto-contacto .contacto-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.texto-contacto .texto-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.texto-contacto .formulario-mail, .texto-contacto .mb-3, .texto-contacto .enviar-boton {
+  width: 100%;
+}
+.texto-contacto .enviar-boton {
+  display: flex;
+  justify-content: flex-start;
+}
+.texto-contacto .btn-enviar {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.texto-contacto .btn-enviar:hover {
+  background-color: #0056b3;
+}
+.texto-contacto .logocontacto {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
 .links-contacto {
   display: flex;
@@ -463,6 +499,12 @@ body {
   }
   .mapa {
     width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .contacto-grid-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
   }
 }
 @media screen and (min-width: 690px) and (max-width: 790px) {

@@ -23,7 +23,51 @@
   justify-content: center;
   flex-direction: column;
   margin: 0px 100px ;
-}
+  
+    .contacto-grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+  }
+  
+  .texto-contacto {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .formulario-mail, .mb-3, .enviar-boton {
+      width: 100%;
+  }
+  
+  .enviar-boton {
+      display: flex;
+      justify-content: flex-start;
+  }
+  
+  .btn-enviar {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+  
+  .btn-enviar:hover {
+      background-color: #0056b3;
+  }
+  
+  .logocontacto {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+
+}    
 
 
 .links-contacto{
@@ -31,31 +75,30 @@
   align-items: center;
   flex-direction: column;
   margin-top: 15px;
-}
-
+}  
 
 
 
 .social-icons {
     display: flex;
     gap: 15px; /* Espacio entre los iconos */
-  }
+  }  
   
   .icon {
     font-size: 40px; /* Tamaño de los iconos */
     color: #333; /* Color de los iconos */
     transition: color 0.3s ease, transform 0.3s ease;
-  }
+  }  
   
   .icon:hover {
     color: #1da1f2; /* Cambia de color al pasar el cursor */
     transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
-  }
+  }  
   
   .mapa{
     color: white;
     display: flex;
-  }
+  }  
 
   .parrafo-contacto{
     margin-left: 5px;
@@ -65,4 +108,5 @@
     overflow-wrap: break-word; /* Para palabras largas */
     align-items: flex-start;
 
-  }
+  }    
+
